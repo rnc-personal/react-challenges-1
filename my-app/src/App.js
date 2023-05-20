@@ -1,11 +1,12 @@
 import css from './App.module.css';
 import Sidebar from './components/SideBar';
-import NavBarSimple from './components/NavBarSimple';
+// import NavBarSimple from './components/NavBarSimple';
+import NavBarSimplNavBarForm from './components/NavBarForm';
 
 function App() {
   return (
     <div className={css.App}>
-      <NavBarSimple message="LOGIN" />
+      <NavBarSimplNavBarForm />
       <Sidebar url="#"/>
     </div>
   );

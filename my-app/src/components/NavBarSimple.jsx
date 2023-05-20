@@ -22,8 +22,8 @@ class NavBarSimple extends React.Component {
     render() {
         return (
         <div className={css.NavBar}>
-            <h1>Navbar</h1>
-            <span>Hello!</span>
+            <h1>My Gallery</h1>
+            <span>React Challenges</span>
             <button onClick={()=> this.handleClick()}>{this.state.message}</button>
         </div>
         )
