@@ -19,7 +19,7 @@ export default class Content extends Component {
             this.setState({
                 isLoaded: true,
             })
-        }, 3000)
+        }, 2000)
     }
 
     componentDidMount() {
@@ -32,11 +32,15 @@ export default class Content extends Component {
                 <div className={css.TitleBar}>
                     <h1>My Photos</h1>
                 </div>
-                {this.state.isLoaded ? (
-                    <div className={css.SearchResults}>
+
+                <div className={css.SearchResults}>
+                {
+                    this.state.isLoaded ? 
                         <PostItem posts={savedPosts} />
-                    </div>) : (<div><Loader /></div>)
-                }
+                        :
+                        <Loader />
+                    }
+                </div>
             </div>
         )
     }
