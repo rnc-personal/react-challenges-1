@@ -38,10 +38,10 @@ import css from './css/PostItem.module.css';
 
 //  Chat GPT fixed this
 function PostItem(props) {
-    const { savedPosts } = props.posts; // Access the savedPosts array
+    // const { savedPosts } = props.posts; // Access the savedPosts array
 
     return (
-        savedPosts.map(post => {
+        props.savedPosts.map(post => {
             // Extra task destructuring 
             const { title, name, image, description } = post;
             return (
