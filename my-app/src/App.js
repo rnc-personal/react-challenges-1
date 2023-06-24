@@ -5,13 +5,15 @@ import NavBarSimplNavBarForm from './components/NavBarForm';
 import Content from './components/Content';
 import ContentAPI from './components/ContentAPI';
 import ContentHooks from './components/ContentHooks';
+import ContentAPIHooks from './components/ContentAPIHooks';
+
 
 function App() {
   return (
     <div className={css.App}>
       <NavBarSimplNavBarForm />
-      <Sidebar url="#"/>
-      <ContentAPI />
+      <Sidebar />
+      <ContentAPIHooks />
     </div>
   );
 }
